@@ -9,6 +9,6 @@ Bot de tickets del servidor de Discord de JukeRex (discord.js v14).
 ## Despliegue (Pterodactyl, egg Node.js)
 
 - Git address: este repositorio · Branch: `main` · Archivo principal: `index.js` · Auto update: sí.
-- Variable `DISCORD_TOKEN` con el token del bot (nunca se sube al repo).
+- Token: variable de entorno `DISCORD_TOKEN` o, si el egg no la ofrece, un archivo `.env` en la carpeta del servidor con `DISCORD_TOKEN=...` (nunca se sube al repo).
 - En Developer Portal → Bot, activar **Message Content Intent** (para las transcripciones).
 - En Discord, el comando `/panel-tickets` (admin) publica el panel en el canal actual.

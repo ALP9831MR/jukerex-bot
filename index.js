@@ -5,6 +5,9 @@ import {
 } from 'discord.js';
 import { readFileSync } from 'node:fs';
 
+// El token puede venir del entorno o de un archivo .env junto al bot (no se sube a git).
+try { process.loadEnvFile('.env'); } catch { /* sin .env: se usa el entorno */ }
+
 const COLOR = 0x22d8ff, COLOR2 = 0xd83cff;
 const TAG = 'JukeRex · Your room. Your music. Your vibe.';
 const CATEGORY = '⊱───── {·.TICKETS.·} ───── ⊰';
